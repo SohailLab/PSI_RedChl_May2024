@@ -10,7 +10,7 @@ The included figure illustrates the allowed energy transfer pathways and assigne
 
 # Running the simulation
 ```Python
-results, annivec_prox, annivec_distal, bulkExc = Trimeric_and_Monomeric_PSI_monomersREV([8.1,15.2,28.8,45.7],80, 5000, 0.125,3.2, 1000, 0.6,0.05, 0.15 )
+results, annivecprox, annivecdistal, bulkExc, back_transfer = Trimeric_and_Monomeric_PSI_monomers_backtransfer([8.1,15.2,28.8,45.7],40, 2000, 0.250,3, 0.200, 0.0055, 2000, 0.6,0.05, 0.15)
 ```
 
 You can use this code to simulate exciton migration at the red Chls in cyanobacterial PSI. Simulation results are plotted against experimental transient absorption waiting time traces at 706 nm. 'results' is the decay of excitations at the red Chls; 'annivec_prox' and 'annivec_distal' count the number of cumulative annihilation events at each time step at the proximal red Chl(s) and distal red Chl, respectively; 'bulkExc' is the decay of the excitations at the included bulk sites.  
